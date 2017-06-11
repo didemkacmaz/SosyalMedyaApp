@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tatlicilar.sosyalmedyaapp.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/AcilisResim"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/LoginName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı Adınız Giriniz"
+        android:inputType="textPersonName"
+     />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Şifreniz"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/GirisBttn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:text="Giriş" />
+
+    <Button
+        android:id="@+id/UyeolBttn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:text="Uye ol" />
+</LinearLayout>
